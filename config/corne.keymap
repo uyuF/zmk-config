@@ -8,15 +8,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        caps_word_combo {
-            bindings = <&caps_word>;
-            key-positions = <16 19>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
