@@ -8,7 +8,14 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <24 35>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -35,13 +42,13 @@
 
         SYM {
             bindings = <
-&bootloader  &none  &none  &none  &none  &none    &none      &kp LS(LBRC)  &kp LS(RBRC)  &none      &none          &kp PLUS
-&none        &none  &none  &none  &none  &none    &kp COLON  &kp LS(LPAR)  &kp LS(RPAR)  &kp SQT    &kp DQT        &none
-&none        &none  &none  &none  &none  &none    &kp EQUAL  &kp LBKT      &kp RBKT      &kp UNDER  &kp BACKSLASH  &kp PIPE
-                           &none  &none  &none    &none      &kp UNDER     &kp MINUS
+&bootloader  &none  &none  &none  &none  &none    &none  &kp LS(LBRC)  &kp LS(PLUS)   &kp LS(RPAR)  &kp LS(DQT)    &none
+&none        &none  &none  &none  &none  &none    &none  &kp LS(LPAR)  &kp EQUAL      &kp LS(RPAR)  &kp SQT        &none
+&none        &none  &none  &none  &none  &none    &none  &kp LBKT      &kp LS(COLON)  &kp RBKT      &kp BACKSLASH  &kp PIPE
+                           &none  &none  &none    &none  &kp UNDER     &kp MINUS
             >;
 
-            label = "SYM";
+            label = "Sym";
         };
 
         NAV {
