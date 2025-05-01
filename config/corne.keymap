@@ -24,40 +24,39 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E             &kp R          &kp T          &kp Y        &kp U         &kp I        &kp O    &kp P     &none
+&kp TAB         &kp Q  &kp W  &kp E             &kp R          &kp T          &kp Y        &kp U         &kp I        &kp O    &kp P     &kp ESCAPE
 &kp LCTRL       &kp A  &kp S  &kp D             &kp F          &kp G          &kp H        &kp J         &kp K        &kp L    &kp SEMI  &kp APOSTROPHE
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V          &kp B          &kp N        &kp M         &kp COMMA    &kp DOT  &kp FSLH  &kp RSHFT
-                              &u_lt 5 LEFT_ALT  &u_lt 3 SPACE  &u_lt 4 TAB    &u_lt 2 RET  &u_lt 1 BSPC  &u_lt 6 DEL
+                              &u_lt 5 LEFT_ALT  &u_lt 3 SPACE  &u_lt 2 TAB    &u_lt 1 RET  &u_lt 1 BSPC  &u_lt 6 DEL
             >;
         };
 
         NUM {
             display-name = "Num";
             bindings = <
-&kp GRAVE  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp EQUAL
-&kp SEMI   &kp N1        &kp N2      &kp N3         &kp N4        &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp DOUBLE_QUOTES
-&none      &none         &none       &kp LS(LBRC)   &kp LBKT      &kp LS(LPAR)     &kp LS(RPAR)   &kp RBKT      &kp LS(RBRC)  &none         &kp BSLH      &none
-                                     &none          &none         &kp MINUS        &none          &none         &none
+&kp TILDE  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp EQUAL
+&kp GRAVE  &kp N1        &kp N2      &kp N3         &kp N4        &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp DOUBLE_QUOTES
+&kp LSHFT  &none         &none       &kp LS(LBRC)   &kp LBKT      &kp LS(LPAR)     &kp LS(RPAR)   &kp RBKT      &kp LS(RBRC)  &none         &kp BSLH      &kp RSHFT
+                                     &kp LCTRL      &kp LEFT_ALT  &kp MINUS        &none          &none         &none
             >;
         };
 
         SYM {
-            display-name = "Sym";
             bindings = <
-&kp TILDE  &kp EXCL      &kp AT    &kp HASH   &kp DLLR        &kp CARET               &kp AMPS               &kp ASTRK  &kp LPAR   &kp RPAR  &kp UNDER  &kp PLUS
-&none      &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHFT       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI   &none
-&none      &none         &none     &none      &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RBKT               &kp RBRC   &none      &kp RALT  &none      &none
-                                   &kp LPAR   &kp RPAR        &kp UNDER               &none                  &none      &none
+&none  &none  &none  &none  &none  &none    &none      &kp LS(LBRC)  &kp LS(RBRC)  &none    &none    &kp PLUS
+&none  &none  &none  &none  &none  &none    &none      &kp LS(LPAR)  &kp LS(RPAR)  &kp SQT  &kp DQT  &none
+&none  &none  &none  &none  &none  &none    &none      &kp LBKT      &kp RBKT      &none    &none    &none
+                     &none  &none  &none    &kp UNDER  &kp EQUAL     &kp COLON
             >;
         };
 
         NAV {
             display-name = "Nav";
             bindings = <
-&none  &none     &none     &none      &none      &none    &kp K_AGAIN   &kp LS(INS)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &u_caps_word  &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT   &none
-&none  &none     &kp RALT  &none      &none      &none    &kp INS       &kp HOME     &kp PG_DN    &kp PG_UP    &kp END     &none
-                           &none      &none      &none    &kp RET       &kp BSPC     &kp DEL
+&none  &none     &none     &none      &none      &none    &kp K_AGAIN   &kp LS(INSERT)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &u_caps_word  &kp LEFT        &kp DOWN     &kp UP       &kp RIGHT   &none
+&none  &none     &kp RALT  &none      &none      &none    &kp INS       &kp HOME        &kp PG_DN    &kp PG_UP    &kp END     &none
+                           &none      &none      &none    &kp RET       &kp BSPC        &kp DEL
             >;
         };
 
@@ -84,10 +83,10 @@
         FUN {
             display-name = "Fun";
             bindings = <
-&kp F1  &kp F2    &kp F3    &kp F4     &kp F5     &kp F6             &kp F7          &kp F8     &kp F9     &kp F10   &kp F11   &kp F12
-&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp PRINTSCREEN    &kp SCROLLLOCK  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
-&none   &none     &none     &none      &none      &kp PAUSE_BREAK    &none           &none      &none      &kp RALT  &none     &none
-                            &kp K_APP  &kp SPACE  &kp TAB            &none           &none      &none
+&none  &kp F1  &kp F2  &kp F3     &kp F10    &kp PRINTSCREEN    &none  &none      &none      &none     &none     &none
+&none  &kp F4  &kp F5  &kp F6     &kp F11    &kp SCROLLLOCK     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
+&none  &kp F7  &kp F8  &kp F9     &kp F12    &kp PAUSE_BREAK    &none  &none      &none      &kp RALT  &none     &none
+                       &kp K_APP  &kp SPACE  &kp TAB            &none  &none      &none
             >;
         };
     };
