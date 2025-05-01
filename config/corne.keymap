@@ -35,10 +35,10 @@
 
         SYM {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none      &kp LS(LBRC)  &kp LS(RBRC)  &none      &none          &kp PLUS
-&none  &none  &none  &none  &none  &none    &kp COLON  &kp LS(LPAR)  &kp LS(RPAR)  &kp SQT    &kp DQT        &none
-&none  &none  &none  &none  &none  &none    &kp EQUAL  &kp LBKT      &kp RBKT      &kp UNDER  &kp BACKSLASH  &kp PIPE
-                     &none  &none  &none    &none      &kp UNDER     &kp MINUS
+&bootloader  &none  &none  &none  &none  &none    &none      &kp LS(LBRC)  &kp LS(RBRC)  &none      &none          &kp PLUS
+&none        &none  &none  &none  &none  &none    &kp COLON  &kp LS(LPAR)  &kp LS(RPAR)  &kp SQT    &kp DQT        &none
+&none        &none  &none  &none  &none  &none    &kp EQUAL  &kp LBKT      &kp RBKT      &kp UNDER  &kp BACKSLASH  &kp PIPE
+                           &none  &none  &none    &none      &kp UNDER     &kp MINUS
             >;
 
             label = "SYM";
@@ -77,7 +77,7 @@
         FUN {
             display-name = "Fun";
             bindings = <
-&none  &kp F1  &kp F2  &kp F3     &kp F10    &kp PRINTSCREEN    &none  &none      &none      &none     &none     &none
+&none  &kp F1  &kp F2  &kp F3     &kp F10    &kp PRINTSCREEN    &none  &none      &none      &none     &none     &bootloader
 &none  &kp F4  &kp F5  &kp F6     &kp F11    &kp SCROLLLOCK     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
 &none  &kp F7  &kp F8  &kp F9     &kp F12    &kp PAUSE_BREAK    &none  &none      &none      &kp RALT  &none     &none
                        &kp K_APP  &kp SPACE  &kp TAB            &none  &none      &none
