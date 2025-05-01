@@ -1,5 +1,4 @@
 #include <behaviors/mouse_key_press.dtsi>
-
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -28,28 +27,8 @@
             bindings = <
 &none  &kp Q         &kp W         &kp E          &kp R          &kp T            &kp Y        &kp U          &kp I          &kp O           &kp P           &none
 &none  &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHFT F  &kp G            &kp H        &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SQT  &none
-&none  &u_lt 3 Z     &u_mt RALT X  &kp C          &kp V          &kp B            &kp N        &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 3 SLASH   &none
-                                   &u_lt 6 ESC    &u_lt 4 TAB    &u_lt 5 SPACE    &u_lt 9 RET  &u_lt 7 BSPC   &u_lt 10 DEL
-            >;
-        };
-
-        EXTRA {
-            display-name = "Extra";
-            bindings = <
-&none  &kp Q         &kp W         &kp E          &kp R          &kp T            &kp Y        &kp U          &kp I          &kp O           &kp P           &none
-&none  &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHFT F  &kp G            &kp H        &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SQT  &none
-&none  &u_lt 3 Z     &u_mt RALT X  &kp C          &kp V          &kp B            &kp N        &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 3 SLASH   &none
-                                   &u_lt 6 ESC    &u_lt 4 TAB    &u_lt 5 SPACE    &u_lt 9 RET  &u_lt 7 BSPC   &u_lt 10 DEL
-            >;
-        };
-
-        TAP {
-            display-name = "Tap";
-            bindings = <
-&none  &kp Q  &kp W  &kp E    &kp R    &kp T        &kp Y    &kp U     &kp I      &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D    &kp F    &kp G        &kp H    &kp J     &kp K      &kp L    &kp SQT    &none
-&none  &kp Z  &kp X  &kp C    &kp V    &kp B        &kp N    &kp M     &kp COMMA  &kp DOT  &kp SLASH  &none
-                     &kp ESC  &kp TAB  &kp SPACE    &kp RET  &kp BSPC  &kp DEL
+&none  &u_lt 1 Z     &u_mt RALT X  &kp C          &kp V          &kp B            &kp N        &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 1 SLASH   &none
+                                   &u_lt 4 ESC    &u_lt 2 TAB    &u_lt 3 SPACE    &u_lt 6 RET  &u_lt 5 BSPC   &u_lt 7 DEL
             >;
         };
 
@@ -314,9 +293,7 @@
     };
 };
 
-
-
- / {
+/ {
     macros {
         u_macro_btn1: u_macro_btn1 {
             compatible = "zmk,behavior-macro";
@@ -349,7 +326,7 @@
     };
 };
 
- / {
+/ {
     behaviors {
         u_mt: u_mt {
             compatible = "zmk,behavior-hold-tap";
