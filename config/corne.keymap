@@ -35,10 +35,10 @@
 
         SYM {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none      &kp LS(LBRC)  &kp LS(RBRC)  &none    &none    &kp PLUS
-&none  &none  &none  &none  &none  &none    &none      &kp LS(LPAR)  &kp LS(RPAR)  &kp SQT  &kp DQT  &none
-&none  &none  &none  &none  &none  &none    &none      &kp LBKT      &kp RBKT      &none    &none    &none
-                     &none  &none  &none    &kp UNDER  &kp COLON     &kp EQUAL
+&none  &none  &none  &none  &none  &none    &none      &kp LS(LBRC)  &kp LS(RBRC)  &none      &none          &kp PLUS
+&none  &none  &none  &none  &none  &none    &kp COLON  &kp LS(LPAR)  &kp LS(RPAR)  &kp SQT    &kp DQT        &none
+&none  &none  &none  &none  &none  &none    &kp EQUAL  &kp LBKT      &kp RBKT      &kp UNDER  &kp BACKSLASH  &kp PIPE
+                     &none  &none  &none    &none      &kp UNDER     &kp MINUS
             >;
 
             label = "SYM";
