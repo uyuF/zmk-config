@@ -36,16 +36,16 @@
             bindings = <
 &kp TILDE  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp EQUAL
 &kp GRAVE  &kp N1        &kp N2      &kp N3         &kp N4        &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp DOUBLE_QUOTES
-&kp LSHFT  &none         &none       &kp LS(LBRC)   &kp LBKT      &kp LS(LPAR)     &kp LS(RPAR)   &kp RBKT      &kp LS(RBRC)  &none         &kp BSLH      &kp RSHFT
+&kp LSHFT  &none         &none       &kp LS(LBRC)   &kp LBKT      &kp LS(LPAR)     &kp LS(RPAR)   &kp RBKT      &kp LS(RBRC)  &none         &kp QMARK     &kp RSHFT
                                      &kp LCTRL      &kp LEFT_ALT  &kp MINUS        &none          &none         &none
             >;
         };
 
         SYM {
             bindings = <
-&bootloader  &none         &none         &none             &none      &none    &none            &kp LBRC   &kp RBRC   &kp EQUAL  &kp PLUS  &none
+&bootloader  &none         &none         &kp LT            &kp GT     &none    &kp PRCNT        &kp LBRC   &kp RBRC   &kp EQUAL  &kp PLUS  &none
 &none        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &none    &kp EXCLAMATION  &kp LPAR   &kp RPAR   &kp SQT    &kp DQT   &none
-&none        &none         &kp RALT      &none             &none      &none    &none            &kp LBKT   &kp RBKT   &kp FSLH   &kp BSLH  &kp PIPE
+&none        &none         &kp RALT      &none             &none      &none    &kp ASTRK        &kp LBKT   &kp RBKT   &kp FSLH   &kp BSLH  &kp PIPE
                                          &none             &none      &none    &kp COLON        &kp UNDER  &kp MINUS
             >;
 
