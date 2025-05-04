@@ -43,8 +43,8 @@
 
         SYM {
             bindings = <
-&bootloader  &none         &none         &kp LT            &kp GT     &none    &kp PRCNT        &kp LBRC   &kp RBRC   &kp SQT    &kp PLUS  &none
-&none        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &none    &kp EXCLAMATION  &kp LPAR   &kp RPAR   &kp COLON  &kp DQT   &none
+&bootloader  &none         &none         &kp LT            &kp GT     &none    &kp PRCNT        &kp LBRC   &kp RBRC   &kp PLUS   &kp DQT   &none
+&none        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &none    &kp EXCLAMATION  &kp LPAR   &kp RPAR   &kp COLON  &kp SQT   &none
 &none        &none         &kp RALT      &none             &none      &none    &kp ASTRK        &kp LBKT   &kp RBKT   &kp FSLH   &kp BSLH  &kp PIPE
                                          &none             &none      &none    &kp EQUAL        &kp UNDER  &kp MINUS
             >;
