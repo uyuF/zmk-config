@@ -27,7 +27,7 @@
 &kp LEFT_ALT  &kp Q  &kp W  &kp E         &kp R        &kp T        &kp Y               &kp U       &kp I      &kp O    &kp P     &kp LC(BSPC)
 &kp LSHFT     &kp A  &kp S  &kp D         &kp F        &kp G        &kp H               &kp J       &kp K      &kp L    &kp SEMI  &kp RSHFT
 &kp LCTRL     &kp Z  &kp X  &kp C         &kp V        &kp B        &kp N               &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
-                            &lt 6 ESCAPE  &lt 3 SPACE  &lt 4 TAB    &u_mt LEFT_GUI RET  &lt 2 BSPC  &lt 7 DEL
+                            &lt 7 ESCAPE  &lt 3 SPACE  &lt 4 TAB    &u_mt LEFT_GUI RET  &lt 2 BSPC  &lt 8 DEL
             >;
         };
 
@@ -55,9 +55,9 @@
         SYM {
             bindings = <
 &bootloader  &none         &none         &none             &none      &none    &kp LT           &kp LBRC   &kp RBRC   &kp GT     &kp PLUS  &kp PRCNT
-&none        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &none    &kp EXCLAMATION  &kp LPAR   &kp RPAR   &kp COLON  &kp SQT   &kp DQT
+&none        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHFT  &none    &kp EXCLAMATION  &kp LPAR   &kp RPAR   &kp EQUAL  &kp SQT   &kp DQT
 &none        &none         &kp RALT      &none             &none      &none    &kp ASTRK        &kp LBKT   &kp RBKT   &kp FSLH   &kp BSLH  &kp PIPE
-                                         &none             &none      &none    &kp EQUAL        &kp UNDER  &kp MINUS
+                                         &none             &none      &none    &kp COLON        &kp UNDER  &kp MINUS
             >;
 
             label = "Sym";
@@ -71,6 +71,17 @@
 &none  &none     &kp RALT  &none      &none      &none    &kp INS       &kp HOME        &kp PG_DN    &kp PG_UP    &kp END     &none
                            &none      &none      &none    &kp RET       &kp BSPC        &kp DEL
             >;
+        };
+
+        MacNav {
+            bindings = <
+&trans  &trans  &trans  &kp LG(TAB)  &kp LG(TILDE)  &trans    &trans  &kp LG(V)  &kp LG(C)  &kp LG(X)  &trans  &trans
+&trans  &trans  &trans  &trans       &trans         &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans       &trans         &trans    &trans  &trans     &trans     &trans     &trans  &trans
+                        &trans       &trans         &trans    &trans  &trans     &trans
+            >;
+
+            label = "MacNav";
         };
 
         MOUSE {
@@ -100,16 +111,6 @@
 &none  &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
 &none  &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &none  &none      &none      &kp RALT  &none     &none
                         &kp K_APP  &kp SPACE  &kp TAB            &none  &none      &none
-            >;
-        };
-
-        MacNav {
-            display-name = "MNav";
-            bindings = <
-&none  &none     &none     &kp LG(TAB)  &kp LG(TILDE)  &none    &kp K_AGAIN   &kp LS(INSERT)  &kp LC(INS)  &kp LS(DEL)  &kp K_UNDO  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL    &kp LSHFT      &none    &u_caps_word  &kp LEFT        &kp DOWN     &kp UP       &kp RIGHT   &none
-&none  &none     &kp RALT  &none        &none          &none    &kp INS       &kp HOME        &kp PG_DN    &kp PG_UP    &kp END     &none
-                           &none        &none          &none    &kp RET       &kp BSPC        &kp DEL
             >;
         };
     };
