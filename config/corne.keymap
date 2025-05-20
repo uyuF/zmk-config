@@ -33,10 +33,10 @@
 
         MacOS {
             bindings = <
-&trans        &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &kp LA(BACKSPACE)
-&trans        &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans
-&kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans  &trans    &u_mt LEFT_CONTROL RETURN  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans       &trans                     &trans  &trans  &trans  &trans  &kp LA(BACKSPACE)
+&trans        &trans  &trans  &trans  &trans  &trans       &trans                     &trans  &trans  &trans  &trans  &trans
+&kp LEFT_GUI  &trans  &trans  &trans  &trans  &trans       &trans                     &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &lt 5 TAB    &u_mt LEFT_CONTROL RETURN  &trans  &trans
             >;
 
             label = "MacBase";
